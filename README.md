@@ -1,2 +1,2 @@
 # familyGames
-Este backend esta realziado con fines de estudio y aprendizaje
+Este backend esta realizado con fines de estudio y aprendizaje
