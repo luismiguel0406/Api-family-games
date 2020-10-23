@@ -47,6 +47,26 @@ deleteComputer:function(req,res){
     if (!computerRemoved) return res.status(404).send('No existe el dato solicitado');
     return res.status(200).send({computerRemoved:computerRemoved});
     })
+},
+
+addComputer:function(req,res){
+var computer = new computersModel();
+
+computer.CPU = req.body.CPU;
+computer.memoria_ram = req.body.memoria_ram;
+computer.socket = req.body.socket;
+computer.disco_duro = req.body.disco_duro;
+computer.color = req.body.color;
+computer.tarjeta_de_video =req.boy.tarjeta_de_video;
+
+computer.save((error,computerSaved)=>{
+
+    if (error) return res.status(500).send('Hubo un error al realizar la consulta');
+    if (!computerSaved) return res.status(404).send('No existe el dato solicitado');
+    return res.status(200).send({computer:computerSaved});
+})
+
+
 }
 
 }
