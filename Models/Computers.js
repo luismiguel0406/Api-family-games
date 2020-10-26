@@ -5,7 +5,7 @@ const {Schema} = mongoose;
 
 const computers_schema = new Schema({
 
-        CPU : String,
+        cpu : String,
         memoria_ram: String,
         socket: String,
         disco_duro: String,
