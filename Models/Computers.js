@@ -14,4 +14,4 @@ const computers_schema = new Schema({
 
 
 });
-module.exports = mongoose.model('computers',computers_schema);
+module.exports = mongoose.model('computer',computers_schema,'computer');

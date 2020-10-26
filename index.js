@@ -11,13 +11,15 @@ app.listen(app.get('port'),()=>{
     console.log('Server running on Port',app.get('port'))
 })
 
+//middlewares
+
+app.use(express.json())
+
 // rutas
 app.use('/api/family',require('./Routes/Computers.router'))
 
 
-//middlewares
 
-app.use(express.json())
 
 
 
