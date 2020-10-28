@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const URI ='mongodb+srv://luis:04061991Luis@cluster0.ahfpe.mongodb.net/ComputersDatabase?retryWrites=true&w=majority';
-
+const URI ='mongodb://localhost/family';
+//const mongoDBAtlas ='mongodb+srv://luis:04061991Luis@cluster0.ahfpe.mongodb.net/ComputersDatabase?retryWrites=true&w=majority'
 const options = {
 
     useNewUrlParser:true,
