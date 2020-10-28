@@ -17,7 +17,7 @@ app.use(express.json())
 
 // rutas
 app.use('/api/family',require('./Routes/Computers.router'))
-
+app.use('api/family',require('./Routes/displays.router'))
 
 
 
