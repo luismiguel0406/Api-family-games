@@ -7,7 +7,7 @@ const display_schema = new Schema({
     
     inches:String,
     resolution:String,
-    model:String,
+    serie:String,
     color:String
 
 });

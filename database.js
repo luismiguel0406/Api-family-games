@@ -1,13 +1,16 @@
 const mongoose = require('mongoose');
 const URI ='mongodb://localhost/family';
-//const mongoDBAtlas ='mongodb+srv://luis:04061991Luis@cluster0.ahfpe.mongodb.net/ComputersDatabase?retryWrites=true&w=majority'
+
+mongoose.set('useFindAndModify',false);
+const UriMongoDBAtlas ='mongodb+srv://luis:04061991Luis@cluster0.ahfpe.mongodb.net/family?retryWrites=true&w=majority'
 const options = {
 
     useNewUrlParser:true,
-    useUnifiedTopology:true
+    useUnifiedTopology:true,
+    useCreateIndex:true
 }
 
-mongoose.connect(URI,options)
+mongoose.connect(UriMongoDBAtlas,options)
 .then(console.log('DB is connected'))
 .catch(err =>console.error(err))
 

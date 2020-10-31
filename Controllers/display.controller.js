@@ -30,7 +30,7 @@ const displayController ={
         
         display.inches = req.body.inches;
         display.resolution = req.body.resolution;
-        display.model = req.body.mode;
+        display.serie = req.body.serie;
         display.color = req.body.color;
         
 
