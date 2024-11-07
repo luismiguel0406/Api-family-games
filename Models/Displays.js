@@ -12,4 +12,4 @@ const display_schema = new Schema({
 
 });
 
-module.exports = mongoose.model('display',display_schema,'display');
+module.exports = mongoose.model('displays',display_schema,'displays');

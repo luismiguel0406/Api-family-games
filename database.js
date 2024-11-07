@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
-const URI ='mongodb://localhost/family';
 
 mongoose.set('useFindAndModify',false);
-const UriMongoDBAtlas ='mongodb+srv://luis:04061991Luis@cluster0.ahfpe.mongodb.net/family?retryWrites=true&w=majority'
+const UriMongoDB ='mongodb://localhost:27017/FamilyGamesDb'
 const options = {
 
     useNewUrlParser:true,
@@ -10,7 +9,7 @@ const options = {
     useCreateIndex:true
 }
 
-mongoose.connect(UriMongoDBAtlas,options)
+mongoose.connect(UriMongoDB,options)
 .then(console.log('DB is connected'))
 .catch(err =>console.error(err))
 
